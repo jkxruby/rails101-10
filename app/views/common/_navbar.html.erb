@@ -17,7 +17,9 @@
                         <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
-                      <li><%= link_to("Account post", account_group_post_path)%></li>
+                      <li><%= link_to("My posts", account_posts_path)%></li>
+                      <li><%= link_to("My groups", account_groups_path)%></li>
+                      <li class="divider"> </li>
                         <li> <%= link_to("退出", destroy_user_session_path, method: :delete) %> </li>
                     </ul>
                   </li>
