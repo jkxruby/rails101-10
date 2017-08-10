@@ -7,7 +7,7 @@ end
 
 def show
   @group = Group.find(params[:id])
-  @posts = @group.posts
+  @posts = @group.posts.paginate(:page => params[:page], :per_page => 5)
 end
 
 def new
